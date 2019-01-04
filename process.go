@@ -65,7 +65,7 @@ func reldoc(key string) {
 	var tagcount int
 	tagcount = 0
 //	fmt.Println(key)
-	file, err := os.Open("/home/shreyanshg/Desktop/WorkOnThis.txt")
+	file, err := os.Open("./WorkOnThis.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -98,7 +98,7 @@ func main() {
 	name, _ = reader.ReadString('\n')
 	keyword = strings.Split(name, "/")
 
-	file1, err1 := os.Open("/home/shreyanshg/Desktop/Dictionary.txt")
+	file1, err1 := os.Open("./Dictionary.txt")
 	if err1 != nil {
 		log.Fatal(err1)
 	}
@@ -123,7 +123,7 @@ func main() {
 	wg.Wait()
 
 	final_result = make(map[string]float64)
-	file, err := os.Open("/home/shreyanshg/Desktop/WorkOnThis.txt")
+	file, err := os.Open("./WorkOnThis.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
